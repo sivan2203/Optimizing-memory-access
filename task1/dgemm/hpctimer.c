@@ -320,7 +320,7 @@ static int hpctimer_set_cpuaffinity(hpctimer_t *timer)
 #endif
 	return HPCTIMER_SUCCESS;
 #else
-#	error "Unsupported platform"
+	perror("Unsupported platform");
 #endif		
 }
 
